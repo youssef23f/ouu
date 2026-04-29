@@ -50,7 +50,7 @@ def verify_otp():
     return jsonify({"status": "SUCCESS"})
 
 @app.route('/')
-def home(): return render_template('index.html')
+def home(): return ('index.html')
 
 @app.route('/api/login', methods=['POST'])
 def login():
